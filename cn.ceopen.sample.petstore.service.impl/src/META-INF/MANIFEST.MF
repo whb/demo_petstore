@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-Version: 1.0.0
+Bundle-Name: Petstore Service Impl Bundle
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: cn.ceopen.sample.petstore.service.impl
+Import-Package: cn.ceopen.sample.petstore.dao,
+ cn.ceopen.sample.petstore.exception,
+ cn.ceopen.sample.petstore.model,
+ cn.ceopen.sample.petstore.service,
+ cn.ceopen.sample.petstore.vo,
+ net.sf.dozer.util.mapping;version="[4.2.1,4.2.1]",
+ org.apache.log4j;version="[1.2.15,1.2.15]"
+Import-Bundle: webx2_core_b;version="[1.0.0,1.0.0]",
+ webx2_core_common;version="[1.0.0,1.0.0]"
+Application-TraceLevels: *=info
+Import-Library: org.springframework.spring;version="[2.5.6.A,2.5.6.A]"

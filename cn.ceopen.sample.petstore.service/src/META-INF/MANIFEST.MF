@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-Version: 1.0.0
+Bundle-Name: Petstore Service Bundle
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: cn.ceopen.sample.petstore.service
+Import-Package: com.sitechasia.webx.core.model
+Export-Package: cn.ceopen.sample.petstore.exception,
+ cn.ceopen.sample.petstore.service,
+ cn.ceopen.sample.petstore.vo
+Import-Library: org.springframework.spring;version="[2.5.6.A,2.5.6.A]"
+

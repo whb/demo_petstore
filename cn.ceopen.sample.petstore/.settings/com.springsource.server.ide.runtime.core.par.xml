@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.springsource.server.ide.par:Par xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.springsource.server.ide.par="http:///com/springsource/server/ide/par.ecore">
+  <bundle symbolicName="cn.ceopen.sample.petstore.dao"/>
+  <bundle symbolicName="cn.ceopen.sample.petstore.service"/>
+  <bundle symbolicName="cn.ceopen.sample.petstore.service.impl"/>
+  <bundle symbolicName="cn.ceopen.sample.petstore.web"/>
+  <bundle symbolicName="cn.ceopen.sample.petstore.datasource"/>
+</com.springsource.server.ide.par:Par>

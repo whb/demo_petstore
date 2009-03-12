@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mappings PUBLIC "-//DOZER//DTD MAPPINGS//EN"
+   "http://dozer.sourceforge.net/dtd/dozerbeanmapping.dtd">
+<mappings>
+	<configuration>
+		<stop-on-errors>false</stop-on-errors>
+		<date-format>MM/dd/yyyy HH:mm:ss</date-format>
+		<!-- 通配符，默认为true，复制所有相同名称的属性，如果为false，只复制xml文件中指定的属性 -->
+		<wildcard>true</wildcard>
+	</configuration>
+
+	<mapping>
+		<class-a>cn.ceopen.sample.petstore.model.Category</class-a>
+		<class-b>cn.ceopen.sample.petstore.vo.CategoryVo</class-b>
+		<field>
+			<a>categoryId</a>
+			<b>categoryId</b>
+		</field>
+		<field>
+			<a>categoryName</a>
+			<b>categoryName</b>
+		</field>
+		<field>
+			<a>categoryDes</a>
+			<b>categoryDes</b>
+		</field>
+	</mapping>
+
+
+</mappings>
