@@ -11,25 +11,15 @@
 	   http://www.springframework.org/schema/aop 
        http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
 
+	<osgi:reference id="dataSource" interface="javax.sql.DataSource" />
 	<osgi:reference id="sessionFactory" interface="org.hibernate.SessionFactory" />
 
-	<osgi:reference id="dataSource" interface="org.apache.commons.dbcp.BasicDataSource" />
-
-	<osgi:service ref="catalogDao"
-		interface="cn.ceopen.sample.petstore.dao.CatalogDao" />
-
-	<!-- Catalog DAO Definition: Hibernate implementation -->
 	<bean id="catalogDao"
 		class="cn.ceopen.sample.petstore.dao.impl.CatalogDaoHibernateImpl">
 		<property name="sessionFactory">
 			<ref bean="sessionFactory" />
 		</property>
 	</bean>
-	
-	<osgi:service ref="productDao"
-		interface="cn.ceopen.sample.petstore.dao.ProductDao" />
-
-	<!-- Catalog DAO Definition: Hibernate implementation -->
 	<bean id="productDao"
 		class="cn.ceopen.sample.petstore.dao.impl.ProductDaoHibernateImpl">
 		<property name="sessionFactory">
@@ -43,7 +33,13 @@
 		</property>
 	</bean>
 
-		<!-- Hibernate公用查询 -->
+	<osgi:service ref="catalogDao"
+		interface="cn.ceopen.sample.petstore.dao.CatalogDao" />
+	<osgi:service ref="productDao"
+		interface="cn.ceopen.sample.petstore.dao.ProductDao" />
+
+
+	<!-- Hibernate公用查询 -->
 	<bean id="commonHibernateDao"
 		class="com.sitechasia.webx.core.dao.hibernate3.CommonHibernateDao">
 		<property name="sessionFactory">
@@ -52,20 +48,9 @@
 	</bean>
 
 	<!-- JDBC公用查询 -->
-	<bean id="commonJdbcDao"
-		class="com.sitechasia.webx.core.dao.jdbc.CommonJdbcDao">
+	<bean id="commonJdbcDao" class="com.sitechasia.webx.core.dao.jdbc.CommonJdbcDao">
 		<property name="dataSource">
 			<ref bean="dataSource" />
 		</property>
 	</bean>
-	
-	<!-- 	
-	<bean id="dataSource"
-		class="org.apache.commons.dbcp.BasicDataSource">
-		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://172.20.80.54:3306/jpetstore" />
-		<property name="username" value="admin" />
-		<property name="password" value="admin" />
-	</bean>
-	 -->
 </beans>

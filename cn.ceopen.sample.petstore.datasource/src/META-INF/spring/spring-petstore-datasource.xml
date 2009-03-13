@@ -5,11 +5,20 @@
        http://www.springframework.org/schema/osgi  
        http://www.springframework.org/schema/osgi/spring-osgi.xsd">
 
-	<bean id="sessionFactoryBean"
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://127.0.0.1:3306/jpetstore" />
+		<property name="username" value="root" />
+		<property name="password" value="admin" />
+	</bean>
+	<osgi:service ref="dataSource" interface="javax.sql.DataSource" />
+
+	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
 		<property name="hibernateProperties">
 			<props>
-				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect
+				</prop>
 				<prop key="hibernate.show_sql">true</prop>
 				<prop key="hibernate.format_sql">true</prop>
 				<prop key="hibernate.generate_statistics">true</prop>
@@ -22,26 +31,14 @@
 		</property>
 		<property name="mappingResources" value="Category.hbm.xml" />
 	</bean>
-
-
-	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
-		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://127.0.0.1:3306/jpetstore" />
-		<property name="username" value="root" />
-		<property name="password" value="admin" />
-	</bean>
-
-	<bean id="transactionManagerBean"
-		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
-		<property name="sessionFactory" ref="sessionFactoryBean" />
-	</bean>
-
-	<osgi:service ref="dataSource"
-		interface="org.apache.commons.dbcp.BasicDataSource" />
-
-	<osgi:service id="sessionFactoryService" ref="sessionFactoryBean"
+	<osgi:service id="sessionFactoryService" ref="sessionFactory"
 		interface="org.hibernate.SessionFactory" />
 
-	<osgi:service id="transactionManagerService" ref="transactionManagerBean"
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<osgi:service id="transactionManagerService" ref="transactionManager"
 		interface="org.springframework.orm.hibernate3.HibernateTransactionManager" />
 </beans>
