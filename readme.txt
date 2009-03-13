@@ -1,16 +1,14 @@
-±¾ÑùÀı´úÂëÓÃÓÚÑİÊ¾ÔÚspring dm serverÖĞµÄpetstoreÀı×Ó,°üÀ¨·ÖÀàµÄ·ÖÒ³ÁĞ±íÕ¹Ê¾¼°Ôö¼Ó¡¢ĞŞ¸Ä¡¢É¾³ı/ÅúÁ¿É¾³ı¡¢²úÆ·µÄËÑË÷ºÍ»ùÓÚlog4jµÄÈÕÖ¾²Ù×÷¡£
+æœ¬æ ·ä¾‹ä»£ç ç”¨äºæ¼”ç¤ºåœ¨spring dm serverä¸­çš„petstoreä¾‹å­,åŒ…æ‹¬åˆ†ç±»çš„åˆ†é¡µåˆ—è¡¨å±•ç¤ºåŠå¢åŠ ã€ä¿®æ”¹ã€åˆ é™¤/æ‰¹é‡åˆ é™¤ã€äº§å“çš„æœç´¢å’ŒåŸºäºlog4jçš„æ—¥å¿—æ“ä½œã€‚
 
 
-Ô´´úÂë×éÖ¯:
-	cn.ceopen.sample.petstore                   :PAR ¹¤³Ì
-	cn.ceopen.sample.petstore.dao               :dao ¹¤³Ì
-	cn.ceopen.sample.petstore.datasource        :Êı¾İÔ´ ¹¤³Ì
-	cn.ceopen.sample.petstore.service           :·şÎñ½Ó¿Ú ¹¤³Ì
-	cn.ceopen.sample.petstore.service.impl      :·şÎñÊµÏÖ ¹¤³Ì
-  cn.ceopen.sample.petstore.web               :web ¹¤³Ì
+æºä»£ç ç»„ç»‡:
+	cn.ceopen.sample.petstore                   :PAR å·¥ç¨‹
+	cn.ceopen.sample.petstore.dao               :dao å·¥ç¨‹
+	cn.ceopen.sample.petstore.datasource        :æ•°æ®æº å·¥ç¨‹
+	cn.ceopen.sample.petstore.service           :æœåŠ¡æ¥å£ å·¥ç¨‹
+	cn.ceopen.sample.petstore.service.impl      :æœåŠ¡å®ç° å·¥ç¨‹
+  cn.ceopen.sample.petstore.web               :web å·¥ç¨‹
 
 
-Ê¹ÓÃËµÃ÷:
-  http://localhost:8080/petstore: ³ÌĞòµÄÈë¿Ú¡£
-
-    
+ä½¿ç”¨è¯´æ˜:
+  http://localhost:8080/petstore: ç¨‹åºçš„å…¥å£ã€‚
