@@ -12,8 +12,29 @@
        http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
 
 	<osgi:reference id="dataSource" interface="javax.sql.DataSource" />
-	<osgi:reference id="sessionFactory" interface="org.hibernate.SessionFactory" />
-
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect
+				</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.generate_statistics">true</prop>
+				<prop key="hibernate.max_fetch_depth">2</prop>
+				<prop key="hibernate.cache.use_second_level_cache">false</prop>
+			</props>
+		</property>
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="mappingResources" value="Category.hbm.xml" />
+	</bean>
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<osgi:service ref="transactionManager" interface="org.springframework.orm.hibernate3.HibernateTransactionManager" />
 	<bean id="catalogDao"
 		class="cn.ceopen.sample.petstore.dao.impl.CatalogDaoHibernateImpl">
 		<property name="sessionFactory">

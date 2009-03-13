@@ -50,4 +50,23 @@
 	<osgi:service ref="catalogService"
 		interface="cn.ceopen.sample.petstore.service.CatalogService" />
 
+	<osgi:reference id="transactionManager" interface="org.springframework.orm.hibernate3.HibernateTransactionManager" />
+	
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="get*" read-only="true" />
+			<tx:method name="find*" read-only="true" />
+			<tx:method name="search*" read-only="true" />
+			<tx:method name="*" />
+		</tx:attributes>
+	</tx:advice>
+	<aop:config>
+		<aop:pointcut id="projectServiceOperation" expression="execution(* cn.ceopen..*Service.*(..))" />
+		<aop:pointcut id="webxServiceOperation"
+			expression="execution(* com.sitechasia.webx.core.service..*Service.*(..))" />
+		<aop:advisor pointcut-ref="projectServiceOperation"
+			advice-ref="txAdvice" />
+		<aop:advisor pointcut-ref="webxServiceOperation"
+			advice-ref="txAdvice" />
+	</aop:config>
 </beans>

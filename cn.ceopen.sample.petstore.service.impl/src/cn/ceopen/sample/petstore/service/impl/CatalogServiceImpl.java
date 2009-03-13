@@ -6,8 +6,6 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-import com.sitechasia.webx.core.utils.dozer.DozerConvertUtil;
-
 import cn.ceopen.sample.petstore.dao.CatalogDao;
 import cn.ceopen.sample.petstore.dao.ProductDao;
 import cn.ceopen.sample.petstore.exception.MyPetStoreException;
@@ -15,6 +13,8 @@ import cn.ceopen.sample.petstore.model.Category;
 import cn.ceopen.sample.petstore.service.CatalogService;
 import cn.ceopen.sample.petstore.vo.CategoryVo;
 import cn.ceopen.sample.petstore.vo.ProductVo;
+
+import com.sitechasia.webx.core.utils.dozer.DozerConvertUtil;
 
 /**
  * Catalog Service 接口实现类.
@@ -24,6 +24,8 @@ import cn.ceopen.sample.petstore.vo.ProductVo;
  * @version 1.0
  * @since JDK1.5
  */
+
+
 public class CatalogServiceImpl implements CatalogService {
 
 	private CatalogDao catalogDao;
@@ -82,7 +84,6 @@ public class CatalogServiceImpl implements CatalogService {
 	}
 
 	public void addCategory(CategoryVo categoryVo) {
-		// TODO Auto-generated method stub
 		Category c = new Category();
 		dozerConvertUtil.viewObjectToDomainObject(categoryVo, c);
 		catalogDao.saveCategory(c);
@@ -90,13 +91,11 @@ public class CatalogServiceImpl implements CatalogService {
 	}
 
 	public void deleteCategoryById(String categoryId) {
-		// TODO Auto-generated method stub
 		logger.info("deleting category by id from log4j");
 		this.catalogDao.deleteCategoryById(categoryId);
 	}
 
 	public void deleteCateogries(Serializable[] ids) {
-		// TODO Auto-generated method stub
 		logger.info("deleting category by id from log4j");
 		
 		catalogDao.deleteCategoryByIds(ids);
@@ -111,7 +110,6 @@ public class CatalogServiceImpl implements CatalogService {
 	}
 
 	public CategoryVo getCategory(String categoryId) {
-		// TODO Auto-generated method stub
 		CategoryVo categoryVo=new CategoryVo();
 		Category category=this.catalogDao.getCategory(categoryId);
 		dozerConvertUtil.domainObjectToViewObject(category, categoryVo);
