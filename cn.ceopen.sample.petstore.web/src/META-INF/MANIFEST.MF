@@ -9,10 +9,8 @@ Import-Library: org.springframework.spring;version="[2.5.6.A,2.5.6.A]"
 Import-Bundle: com.springsource.org.apache.taglibs.standard;version="[1.1.2,1.1.2]",
  com.springsource.javax.servlet;version="[2.5.0,2.5.0]",
  com.springsource.org.apache.struts;version="[1.2.9,1.2.9]",
- webx2_core_common;version="[1.0.0,1.0.0]",
  org.springframework.struts;version="[2.5.6.A,2.5.6.A]",
- webx2_core;version="[1.0.0,1.0.0]",
- webx2_core_b;version="[1.0.0,1.0.0]"
+ webx-core;version="[2.0.0,2.0.0]"
 Import-Package: cn.ceopen.sample.petstore.model,
  cn.ceopen.sample.petstore.service,
  cn.ceopen.sample.petstore.vo,

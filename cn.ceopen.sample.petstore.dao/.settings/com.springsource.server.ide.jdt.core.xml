@@ -400,21 +400,13 @@
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/usr/webx2-core-b.jar">
+<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/usr/webx.core-2.0.0.jar">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
 	</attributes>
 	<accessrules>
 		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/dao/hibernate3/*"/>
 		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/dao/jdbc/*"/>
-		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
-	</accessrules>
-</classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/usr/webx2-core-common.jar">
-	<attributes>
-		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
-	</attributes>
-	<accessrules>
 		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/model/*"/>
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>

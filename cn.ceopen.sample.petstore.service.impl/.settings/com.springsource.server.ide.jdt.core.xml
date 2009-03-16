@@ -362,11 +362,12 @@
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/usr/webx2-core-b.jar">
+<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/usr/webx.core-2.0.0.jar">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
 	</attributes>
 	<accessrules>
+		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/annotation/*"/>
 		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/cache/*"/>
 		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/cache/annotation/*"/>
 		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/cache/ehcache/*"/>
@@ -378,25 +379,27 @@
 		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/dao/jdbc/hsqldb/*"/>
 		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/dao/jdbc/mysql/*"/>
 		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/dao/jdbc/oracle/*"/>
-		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/model/impl/*"/>
-		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/service/impl/*"/>
-		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
-	</accessrules>
-</classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/usr/webx2-core-common.jar">
-	<attributes>
-		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
-	</attributes>
-	<accessrules>
 		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/exception/*"/>
+		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/exception/support/*"/>
 		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/model/*"/>
 		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/page/*"/>
 		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/service/*"/>
+		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/service/impl/*"/>
 		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/support/*"/>
+		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/translator/*"/>
 		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/utils/base/*"/>
-		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/utils/encrypt/*"/>
-		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/utils/populator/*"/>
+		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/utils/commons/*"/>
+		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/utils/context/*"/>
+		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/utils/datasource/*"/>
 		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/utils/dozer/*"/>
+		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/utils/encrypt/*"/>
+		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/utils/image/*"/>
+		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/utils/populator/*"/>
+		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/web/i18n/*"/>
+		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/web/struts1/*"/>
+		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/web/struts1/action/*"/>
+		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/web/struts1/action/aop/*"/>
+		<accessrule kind="accessible" pattern="com/sitechasia/webx/core/web/struts1/servlet/*"/>
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
