@@ -64,6 +64,4 @@ public class CategoryAction extends BaseCRUDAction<CategoryVo, Integer> {
 		catalogService.saveOrUpdate(categoryVo);
 		return "list";
 	}
-	
-	
 }

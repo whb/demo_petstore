@@ -22,19 +22,9 @@
 		<property name="dozerConvertUtil">
 			<ref bean="dozerConvertUtil" />
 		</property>
-		<!--注入mappingFiles-->
-		<!--
-			property name="mappingFiles"> <list>
-			<value>META-INF/dozerBeanMapping.xml</value> </list> </property
-		-->
 	</bean>
 
-	<bean id="dozerBeanMapper" class="net.sf.dozer.util.mapping.DozerBeanMapper">
-		<!--
-			property name="mappingFiles"> <list>
-			<value>META-INF/dozerBeanMapping.xml</value> </list> </property
-		-->
-	</bean>
+	<bean id="dozerBeanMapper" class="net.sf.dozer.util.mapping.DozerBeanMapper" />
 
 	<bean id="dozerConvertUtil"
 		class="com.sitechasia.webx.core.utils.dozer.DozerConvertUtilImle">
@@ -43,16 +33,7 @@
 		</property>
 	</bean>
 
-	<osgi:reference id="productDao"
-		interface="cn.ceopen.sample.petstore.dao.ProductDao" />
-	<osgi:reference id="catalogDao"
-		interface="cn.ceopen.sample.petstore.dao.CatalogDao" />
-	<osgi:service ref="catalogService"
-		interface="cn.ceopen.sample.petstore.service.CatalogService" />
-
-	<osgi:reference id="transactionManager"
-		interface="org.springframework.orm.hibernate3.HibernateTransactionManager" />
-
+	
 	<tx:advice id="txAdvice" transaction-manager="transactionManager">
 		<tx:attributes>
 			<tx:method name="get*" read-only="true" />

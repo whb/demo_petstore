@@ -12,7 +12,5 @@
 		<property name="username" value="root" />
 		<property name="password" value="admin" />
 	</bean>
-	<osgi:service ref="dataSource" interface="javax.sql.DataSource" />
-
 
 </beans>

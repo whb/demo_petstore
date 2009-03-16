@@ -11,7 +11,6 @@
 	   http://www.springframework.org/schema/aop 
        http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
 
-	<osgi:reference id="dataSource" interface="javax.sql.DataSource" />
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
 		<property name="hibernateProperties">
@@ -28,13 +27,13 @@
 		<property name="dataSource">
 			<ref bean="dataSource" />
 		</property>
-		<property name="mappingResources" value="Category.hbm.xml" />
+		<property name="mappingResources" value="maps/Category.hbm.xml" />
 	</bean>
 	<bean id="transactionManager"
 		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
-	<osgi:service ref="transactionManager" interface="org.springframework.orm.hibernate3.HibernateTransactionManager" />
+
 	<bean id="catalogDao"
 		class="cn.ceopen.sample.petstore.dao.impl.CatalogDaoHibernateImpl">
 		<property name="sessionFactory">
@@ -53,12 +52,6 @@
 			<ref bean="commonJdbcDao" />
 		</property>
 	</bean>
-
-	<osgi:service ref="catalogDao"
-		interface="cn.ceopen.sample.petstore.dao.CatalogDao" />
-	<osgi:service ref="productDao"
-		interface="cn.ceopen.sample.petstore.dao.ProductDao" />
-
 
 	<!-- Hibernate公用查询 -->
 	<bean id="commonHibernateDao"
