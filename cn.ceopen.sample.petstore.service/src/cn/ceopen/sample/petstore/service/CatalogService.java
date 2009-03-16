@@ -27,13 +27,16 @@ public interface CatalogService {
 	 * @see MyPetStoreException
 	 */
 	public List<CategoryVo> getCategoryList() throws MyPetStoreException;
-	public void addCategory(CategoryVo categoryVo);
-	public void deleteCategoryById(String categoryId);
-	public void deleteCateogries(Serializable[] ids);
-	public void saveOrUpdate(CategoryVo category);
-	public CategoryVo getCategory(String categoryId);
-	
-	public List searchProductList(String keywords);
-	
 
+	public void addCategory(CategoryVo categoryVo);
+
+	public void deleteCategoryById(String categoryId);
+
+	public void deleteCateogries(Serializable[] ids);
+
+	public void saveOrUpdate(CategoryVo category);
+
+	public CategoryVo getCategory(String categoryId);
+
+	public List<ProductVo> searchProductList(String keywords);
 }

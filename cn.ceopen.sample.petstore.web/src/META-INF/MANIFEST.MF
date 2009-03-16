@@ -11,8 +11,7 @@ Import-Bundle: com.springsource.org.apache.taglibs.standard;version="[1.1.2,1.1.
  com.springsource.org.apache.struts;version="[1.2.9,1.2.9]",
  org.springframework.struts;version="[2.5.6.A,2.5.6.A]",
  webx-core;version="[2.0.0,2.0.0]"
-Import-Package: cn.ceopen.sample.petstore.model,
- cn.ceopen.sample.petstore.service,
+Import-Package: cn.ceopen.sample.petstore.service,
  cn.ceopen.sample.petstore.vo,
  com.sitechasia.webx.core.annotation,
  com.sitechasia.webx.core.web.struts1.action,

@@ -1,13 +1,4 @@
 <classpath>
-<classpathentry combineaccessrules="false" kind="src" path="/cn.ceopen.sample.petstore.dao">
-	<attributes>
-		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
-	</attributes>
-	<accessrules>
-		<accessrule kind="accessible" pattern="cn/ceopen/sample/petstore/model/*"/>
-		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
-	</accessrules>
-</classpathentry>
 <classpathentry combineaccessrules="false" kind="src" path="/cn.ceopen.sample.petstore.service">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>

@@ -50,8 +50,9 @@
 	<osgi:service ref="catalogService"
 		interface="cn.ceopen.sample.petstore.service.CatalogService" />
 
-	<osgi:reference id="transactionManager" interface="org.springframework.orm.hibernate3.HibernateTransactionManager" />
-	
+	<osgi:reference id="transactionManager"
+		interface="org.springframework.orm.hibernate3.HibernateTransactionManager" />
+
 	<tx:advice id="txAdvice" transaction-manager="transactionManager">
 		<tx:attributes>
 			<tx:method name="get*" read-only="true" />

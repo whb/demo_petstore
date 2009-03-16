@@ -25,14 +25,13 @@ import com.sitechasia.webx.core.utils.dozer.DozerConvertUtil;
  * @since JDK1.5
  */
 
-
 public class CatalogServiceImpl implements CatalogService {
 
 	private CatalogDao catalogDao;
 	private DozerConvertUtil dozerConvertUtil;
 	private ProductDao productDao;
 	static Logger logger = Logger.getLogger(CatalogServiceImpl.class.getName());
-	
+
 	public ProductDao getProductDao() {
 		return productDao;
 	}
@@ -41,12 +40,12 @@ public class CatalogServiceImpl implements CatalogService {
 		this.productDao = productDao;
 	}
 
-//	private List mappingFiles;
-//
-//	// 注册dozer mapping files
-//	public void setMappingFiles(List mappingFiles) {
-//		this.mappingFiles = mappingFiles;
-//	}
+	// private List mappingFiles;
+	//
+	// // 注册dozer mapping files
+	// public void setMappingFiles(List mappingFiles) {
+	// this.mappingFiles = mappingFiles;
+	// }
 
 	// 注册dozerConvertUtil
 	public void setDozerConvertUtil(DozerConvertUtil dozerConvertUtil) {
@@ -55,11 +54,11 @@ public class CatalogServiceImpl implements CatalogService {
 
 	public DozerConvertUtil getDozerConvertUtil() {
 
-//		try {
-//			dozerConvertUtil.setMappingFiles(this.mappingFiles);
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
+		// try {
+		// dozerConvertUtil.setMappingFiles(this.mappingFiles);
+		// } catch (Exception e) {
+		// e.printStackTrace();
+		// }
 		return dozerConvertUtil;
 	}
 
@@ -75,8 +74,10 @@ public class CatalogServiceImpl implements CatalogService {
 	 */
 	public List<CategoryVo> getCategoryList() throws MyPetStoreException {
 		try {
-			System.out.println(catalogDao.getCategoryList().size()+"====size");
-			return dozerConvertUtil.domainObjectsToViewObjects(catalogDao.getCategoryList(), CategoryVo.class) ;
+			System.out
+					.println(catalogDao.getCategoryList().size() + "====size");
+			return dozerConvertUtil.domainObjectsToViewObjects(catalogDao
+					.getCategoryList(), CategoryVo.class);
 		} catch (Exception e) {
 			String msg = "Could not get category list " + e.toString();
 			throw new MyPetStoreException(msg, e);
@@ -97,12 +98,10 @@ public class CatalogServiceImpl implements CatalogService {
 
 	public void deleteCateogries(Serializable[] ids) {
 		logger.info("deleting category by id from log4j");
-		
 		catalogDao.deleteCategoryByIds(ids);
 	}
 
 	public void saveOrUpdate(CategoryVo categoryVo) {
-		// TODO Auto-generated method stub
 		Category c = new Category();
 		dozerConvertUtil.viewObjectToDomainObject(categoryVo, c);
 		catalogDao.saveOrUpdate(c);
@@ -110,18 +109,19 @@ public class CatalogServiceImpl implements CatalogService {
 	}
 
 	public CategoryVo getCategory(String categoryId) {
-		CategoryVo categoryVo=new CategoryVo();
-		Category category=this.catalogDao.getCategory(categoryId);
+		CategoryVo categoryVo = new CategoryVo();
+		Category category = this.catalogDao.getCategory(categoryId);
 		dozerConvertUtil.domainObjectToViewObject(category, categoryVo);
 		return categoryVo;
 	}
 
-	public List searchProductList(String keywords) {
+	public List<ProductVo> searchProductList(String keywords) {
 		if (keywords != null && !keywords.isEmpty()) {
-		List productlist=productDao.searchProductList(keywords);
-				return dozerConvertUtil.domainObjectsToViewObjects(productlist,ProductVo.class);
-			} else {
-				return new ArrayList();
-			}
+			List productlist = productDao.searchProductList(keywords);
+			return dozerConvertUtil.domainObjectsToViewObjects(productlist,
+					ProductVo.class);
+		} else {
+			return new ArrayList();
 		}
+	}
 }
