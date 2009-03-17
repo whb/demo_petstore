@@ -18,7 +18,7 @@ import com.sitechasia.webx.core.model.IDomainObject;
 public class Product implements IDomainObject{
 
 	private String productId;
-	private String categoryId;
+	private Category category;
 	private String name;
 	private String descriptionWithImage;
 	private String description;
@@ -33,14 +33,6 @@ public class Product implements IDomainObject{
 
 	public void setProductId(String newProductId) {
 		this.productId = newProductId;
-	}
-
-	public String getCategoryId() {
-		return categoryId;
-	}
-
-	public void setCategoryId(String newCategoryId) {
-		this.categoryId = newCategoryId;
 	}
 
 	public String getName() {
@@ -82,4 +74,13 @@ public class Product implements IDomainObject{
 			this.description = desp;
 		}
 	}
+
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+	
 }

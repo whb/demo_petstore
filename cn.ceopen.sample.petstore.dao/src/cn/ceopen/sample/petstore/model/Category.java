@@ -5,16 +5,19 @@
  */
 package cn.ceopen.sample.petstore.model;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import com.sitechasia.webx.core.model.IDomainObject;
 
 /**
  * Category domain object.
- *
+ * 
  * 
  * @version 1.0
  * @since JDK1.5
  */
-public class Category implements IDomainObject{
+public class Category implements IDomainObject {
 
 	/**
 	 * 
@@ -23,6 +26,7 @@ public class Category implements IDomainObject{
 	private String categoryId;
 	private String categoryName;
 	private String categoryDes;
+	private Set<Product> products = new HashSet<Product>();  
 
 	public Category() {
 	}
@@ -50,4 +54,13 @@ public class Category implements IDomainObject{
 	public void setCategoryDes(String categoryDes) {
 		this.categoryDes = categoryDes;
 	}
+
+	public Set<Product> getProducts() {
+		return products;
+	}
+
+	public void setProducts(Set<Product> products) {
+		this.products = products;
+	}
+
 }

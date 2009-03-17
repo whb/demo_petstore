@@ -3,12 +3,17 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="cn.ceopen.sample.petstore.model">
 	<class name="Category" table="CATEGORY">
-		<id name="categoryId" column="CATID" unsaved-value="null">
+		<id name="categoryId" column="CATID" unsaved-value="undefined">
 			<generator class="assigned" />
 		</id>
 
 		<property name="categoryName" column="NAME" />
 
 		<property name="categoryDes" column="DESCN" />
+
+		<set name="products" cascade="all" inverse="true">
+			<key column="CATEGORY" />
+			<one-to-many class="cn.ceopen.sample.petstore.model.Product" />
+		</set>
 	</class>
 </hibernate-mapping>

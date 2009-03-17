@@ -2,7 +2,9 @@
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.log4j.Logger;
 
@@ -10,6 +12,7 @@ import cn.ceopen.sample.petstore.dao.CatalogDao;
 import cn.ceopen.sample.petstore.dao.ProductDao;
 import cn.ceopen.sample.petstore.exception.MyPetStoreException;
 import cn.ceopen.sample.petstore.model.Category;
+import cn.ceopen.sample.petstore.model.Product;
 import cn.ceopen.sample.petstore.service.CatalogService;
 import cn.ceopen.sample.petstore.vo.CategoryVo;
 import cn.ceopen.sample.petstore.vo.ProductVo;
@@ -87,6 +90,14 @@ public class CatalogServiceImpl implements CatalogService {
 	public void addCategory(CategoryVo categoryVo) {
 		Category c = new Category();
 		dozerConvertUtil.viewObjectToDomainObject(categoryVo, c);
+		
+		Product p = new Product();
+		p.setProductId("test");
+		p.setCategory(c);
+		p.setName("testName");
+		p.setDescriptionWithImage("my test product");
+		c.getProducts().add(p);
+		
 		catalogDao.saveCategory(c);
 		logger.info("saved category from log4j");
 	}
