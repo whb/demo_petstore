@@ -7,9 +7,8 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<reference id="dataSource" interface="javax.sql.DataSource" />
-	
-	<service ref="transactionManager"
-		interface="org.springframework.orm.hibernate3.HibernateTransactionManager" />
+	<reference id="sessionFactory" interface="org.hibernate.SessionFactory" />
+
 	<service ref="catalogDao" interface="cn.ceopen.sample.petstore.dao.CatalogDao" />
 	<service ref="productDao" interface="cn.ceopen.sample.petstore.dao.ProductDao" />
 </beans:beans>

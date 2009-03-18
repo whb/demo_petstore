@@ -5,4 +5,5 @@
   <bundle symbolicName="cn.ceopen.sample.petstore.service.impl"/>
   <bundle symbolicName="cn.ceopen.sample.petstore.web"/>
   <bundle symbolicName="cn.ceopen.sample.petstore.datasource"/>
+  <bundle symbolicName="cn.ceopen.sample.petstore.model"/>
 </com.springsource.server.ide.par:Par>

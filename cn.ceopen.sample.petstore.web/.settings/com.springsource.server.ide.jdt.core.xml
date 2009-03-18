@@ -9,7 +9,7 @@
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/com.springsource.javax.servlet-2.5.0.jar">
+<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/com.springsource.javax.servlet-2.5.0.jar" sourcepath="D:/devel/dm-server-1.0.2/repository/bundles/ext/com.springsource.javax.servlet-sources-2.5.0.jar">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
 	</attributes>
@@ -20,7 +20,7 @@
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/com.springsource.org.aopalliance-1.0.0.jar">
+<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/com.springsource.org.aopalliance-1.0.0.jar" sourcepath="D:/devel/dm-server-1.0.2/repository/bundles/ext/com.springsource.org.aopalliance-sources-1.0.0.jar">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
 	</attributes>
@@ -30,7 +30,7 @@
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/usr/com.springsource.org.apache.struts-1.2.9.jar">
+<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/usr/com.springsource.org.apache.struts-1.2.9.jar" sourcepath="D:/devel/dm-server-1.0.2/repository/bundles/usr/com.springsource.org.apache.struts-sources-1.2.9.jar">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
 	</attributes>
@@ -64,7 +64,7 @@
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/com.springsource.org.apache.taglibs.standard-1.1.2.jar">
+<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/com.springsource.org.apache.taglibs.standard-1.1.2.jar" sourcepath="D:/devel/dm-server-1.0.2/repository/bundles/ext/com.springsource.org.apache.taglibs.standard-sources-1.1.2.jar">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
 	</attributes>
@@ -95,7 +95,7 @@
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.aop-2.5.6.A.jar">
+<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.aop-2.5.6.A.jar" sourcepath="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.aop-sources-2.5.6.A.jar">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
 	</attributes>
@@ -118,7 +118,7 @@
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.aspects-2.5.6.A.jar">
+<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.aspects-2.5.6.A.jar" sourcepath="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.aspects-sources-2.5.6.A.jar">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
 	</attributes>
@@ -128,7 +128,7 @@
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.beans-2.5.6.A.jar">
+<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.beans-2.5.6.A.jar" sourcepath="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.beans-sources-2.5.6.A.jar">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
 	</attributes>
@@ -151,7 +151,7 @@
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.context-2.5.6.A.jar">
+<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.context-2.5.6.A.jar" sourcepath="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.context-sources-2.5.6.A.jar">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
 	</attributes>
@@ -207,7 +207,7 @@
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.context.support-2.5.6.A.jar">
+<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.context.support-2.5.6.A.jar" sourcepath="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.context.support-sources-2.5.6.A.jar">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
 	</attributes>
@@ -223,7 +223,7 @@
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.core-2.5.6.A.jar">
+<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.core-2.5.6.A.jar" sourcepath="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.core-sources-2.5.6.A.jar">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
 	</attributes>
@@ -250,7 +250,7 @@
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.jdbc-2.5.6.A.jar">
+<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.jdbc-2.5.6.A.jar" sourcepath="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.jdbc-sources-2.5.6.A.jar">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
 	</attributes>
@@ -273,7 +273,7 @@
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.jms-2.5.6.A.jar">
+<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.jms-2.5.6.A.jar" sourcepath="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.jms-sources-2.5.6.A.jar">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
 	</attributes>
@@ -294,7 +294,7 @@
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.orm-2.5.6.A.jar">
+<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.orm-2.5.6.A.jar" sourcepath="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.orm-sources-2.5.6.A.jar">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
 	</attributes>
@@ -316,7 +316,7 @@
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.transaction-2.5.6.A.jar">
+<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.transaction-2.5.6.A.jar" sourcepath="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.transaction-sources-2.5.6.A.jar">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
 	</attributes>
@@ -344,7 +344,7 @@
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.web-2.5.6.A.jar">
+<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.web-2.5.6.A.jar" sourcepath="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.web-sources-2.5.6.A.jar">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
 	</attributes>
@@ -365,7 +365,7 @@
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.web.servlet-2.5.6.A.jar">
+<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.web.servlet-2.5.6.A.jar" sourcepath="D:/devel/dm-server-1.0.2/repository/bundles/ext/org.springframework.web.servlet-sources-2.5.6.A.jar">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
 	</attributes>
@@ -400,7 +400,7 @@
 		<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
 	</accessrules>
 </classpathentry>
-<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/usr/org.springframework.web.struts-2.5.6.A.jar">
+<classpathentry kind="lib" path="D:/devel/dm-server-1.0.2/repository/bundles/usr/org.springframework.web.struts-2.5.6.A.jar" sourcepath="D:/devel/dm-server-1.0.2/repository/bundles/usr/org.springframework.web.struts-sources-2.5.6.A.jar">
 	<attributes>
 		<attribute name="com.springsource.server.ide.jdt.core.CLASSPATH_ENTRY" value="true"/>
 	</attributes>

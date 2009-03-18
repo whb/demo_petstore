@@ -7,5 +7,7 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<service ref="dataSource" interface="javax.sql.DataSource" />
-
+	<service ref="sessionFactory" interface="org.hibernate.SessionFactory" />
+	<service ref="transactionManager"
+		interface="org.springframework.orm.hibernate3.HibernateTransactionManager" />
 </beans:beans>

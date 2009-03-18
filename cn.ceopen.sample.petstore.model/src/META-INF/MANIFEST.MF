@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-Version: 1.0.0
+Bundle-Name: Model Bundle
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: cn.ceopen.sample.petstore.model
+Import-Package: com.sitechasia.webx.core.model
+Export-Package: cn.ceopen.sample.petstore.model
+
