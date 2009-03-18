@@ -12,3 +12,5 @@
 
 使用说明:
   http://localhost:8080/petstore: 程序的入口。
+  为保证dozerbeanmapping.dtd可以被加载，需要把dozer bundle中的这个文件拷贝到spring tool suite安装目录下。
+

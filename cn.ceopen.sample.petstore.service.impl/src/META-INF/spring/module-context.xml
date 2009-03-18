@@ -24,7 +24,13 @@
 		</property>
 	</bean>
 
-	<bean id="dozerBeanMapper" class="net.sf.dozer.util.mapping.DozerBeanMapper" />
+	<bean id="dozerBeanMapper" class="net.sf.dozer.util.mapping.DozerBeanMapper">
+		<property name="mappingFiles">
+			<list>
+				<value>cn/ceopen/sample/petstore/vo/dozerBeanMapping.xml</value>
+			</list>
+		</property>
+	</bean>
 
 	<bean id="dozerConvertUtil"
 		class="com.sitechasia.webx.core.utils.dozer.DozerConvertUtilImle">
