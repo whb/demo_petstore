@@ -13,35 +13,23 @@
 
 	<bean id="catalogDao"
 		class="cn.ceopen.sample.petstore.dao.impl.CatalogDaoHibernateImpl">
-		<property name="sessionFactory">
-			<ref bean="sessionFactory" />
-		</property>
+		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 	<bean id="productDao"
 		class="cn.ceopen.sample.petstore.dao.impl.ProductDaoHibernateImpl">
-		<property name="sessionFactory">
-			<ref bean="sessionFactory" />
-		</property>
-		<property name="commonHibernateDao">
-			<ref bean="commonHibernateDao" />
-		</property>
-		<property name="commonJdbcDao">
-			<ref bean="commonJdbcDao" />
-		</property>
+		<property name="sessionFactory" ref="sessionFactory" />
+		<property name="commonHibernateDao" ref="commonHibernateDao" />
+		<property name="commonJdbcDao" ref="commonJdbcDao" />
 	</bean>
 
 	<!-- Hibernate公用查询 -->
 	<bean id="commonHibernateDao"
 		class="com.sitechasia.webx.core.dao.hibernate3.CommonHibernateDao">
-		<property name="sessionFactory">
-			<ref bean="sessionFactory" />
-		</property>
+		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 
 	<!-- JDBC公用查询 -->
 	<bean id="commonJdbcDao" class="com.sitechasia.webx.core.dao.jdbc.CommonJdbcDao">
-		<property name="dataSource">
-			<ref bean="dataSource" />
-		</property>
+		<property name="dataSource" ref="dataSource" />
 	</bean>
 </beans>

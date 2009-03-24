@@ -13,15 +13,9 @@
 
 	<bean id="catalogService"
 		class="cn.ceopen.sample.petstore.service.impl.CatalogServiceImpl">
-		<property name="catalogDao">
-			<ref bean="catalogDao" />
-		</property>
-		<property name="productDao">
-			<ref bean="productDao" />
-		</property>
-		<property name="dozerConvertUtil">
-			<ref bean="dozerConvertUtil" />
-		</property>
+		<property name="catalogDao" ref="catalogDao" />
+		<property name="productDao" ref="productDao" />
+		<property name="dozerConvertUtil" ref="dozerConvertUtil" />
 	</bean>
 
 	<!--
@@ -44,9 +38,7 @@
 	<bean id="dozerBeanMapper" class="net.sf.dozer.util.mapping.DozerBeanMapper" />
 	<bean id="dozerConvertUtil"
 		class="com.sitechasia.webx.core.utils.dozer.DozerConvertUtilImle">
-		<property name="dozerBeanMapper">
-			<ref bean="dozerBeanMapper" />
-		</property>
+		<property name="dozerBeanMapper" ref="dozerBeanMapper" />
 	</bean>
 
 

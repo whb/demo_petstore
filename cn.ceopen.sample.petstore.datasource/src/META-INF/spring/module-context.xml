@@ -25,14 +25,11 @@
 				<prop key="hibernate.cache.use_second_level_cache">false</prop>
 			</props>
 		</property>
-		<property name="dataSource">
-			<ref bean="dataSource" />
-		</property>
+		<property name="dataSource" ref="dataSource" />
 		<property name="mappingResources" value="cn/ceopen/sample/petstore/model/Category.hbm.xml" />
 	</bean>
 	<bean id="transactionManager"
 		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
-
 </beans>

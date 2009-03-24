@@ -10,6 +10,6 @@ Import-Package: cn.ceopen.sample.petstore.dao,
  cn.ceopen.sample.petstore.vo,
  net.sf.dozer.util.mapping;version="[4.2.1,4.2.1]",
  org.apache.log4j;version="[1.2.15,1.2.15]"
-Import-Bundle: webx-core;version="[2.0.0,2.0.0]"
 Application-TraceLevels: *=info
 Import-Library: org.springframework.spring;version="[2.5.6.A,2.5.6.A]"
+Import-Bundle: webx-core;version="[2.0.0,2.0.0]"
