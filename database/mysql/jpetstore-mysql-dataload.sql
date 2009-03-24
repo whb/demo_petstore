@@ -1,3 +1,5 @@
+USE JPETSTORE;
+
 INSERT INTO sequence VALUES('ordernum', 1000);
 
 INSERT INTO signon VALUES('j2ee','j2ee');
