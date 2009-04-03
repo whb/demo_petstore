@@ -17,4 +17,5 @@
 使用说明:
   http://localhost:8080/petstore: 程序的入口。
   工程文件最好放在spring tools suite的workspace下，否则PAR的导出有问题。
+	sts2.0中对于service-impl-context.xml会报告AOP错误，可以忽略该错误。
 

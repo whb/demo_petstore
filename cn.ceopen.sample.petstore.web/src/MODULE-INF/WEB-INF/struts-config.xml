@@ -1,27 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE struts-config SYSTEM "struts-config_1_2.dtd">
 <struts-config>
-	<form-beans>
-		<form-bean name="categoryForm" type="org.apache.struts.action.DynaActionForm">
-		</form-bean>
-		<form-bean name="catalogForm" type="cn.ceopen.sample.petstore.form.CatalogForm">
-		</form-bean>
-	</form-beans>
-
-	<action-mappings>
-		<action path="/categoryAction" name="categoryForm" scope="request"
-			validate="false" parameter="method">
-			<forward name="save" path="/jsp/categoryList.jsp" />
-			<forward name="update" path="/jsp/categoryEdit.jsp" />
-			<forward name="list" path="/categoryAction.do?method=list" />
-	   </action>
-	   
-	   <action path="/searchProducts" scope="session"
-			name="catalogForm" parameter="method" validate="false">
-			<forward name="success" path="/jsp/SearchProducts.jsp" />
-		</action>
-	</action-mappings>
-	
 	<controller>
 		<set-property property="processorClass"
 			value="org.springframework.web.struts.DelegatingRequestProcessor" />
