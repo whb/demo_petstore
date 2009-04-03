@@ -10,7 +10,7 @@ Import-Bundle: com.springsource.org.apache.taglibs.standard;version="[1.1.2,1.1.
  com.springsource.javax.servlet;version="[2.5.0,2.5.0]",
  com.springsource.org.apache.struts;version="[1.2.9,1.2.9]",
  org.springframework.struts;version="[2.5.6.A,2.5.6.A]",
- com.sitechasia.webx2.core;version="[1.0.0,1.0.0]"
+ com.sitechasia.webx2.core;version="[2.1.0,2.1.0]"
 Import-Package: cn.ceopen.sample.petstore.service,
  cn.ceopen.sample.petstore.vo,
  com.sitechasia.webx.core.annotation,

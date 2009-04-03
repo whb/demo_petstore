@@ -4,8 +4,10 @@ Bundle-ManifestVersion: 2
 Bundle-SymbolicName: cn.ceopen.sample.petstore.datasource
 Bundle-Version: 1.0.0
 Import-Package: cn.ceopen.sample.petstore.model,
+ com.sitechasia.webx.osgi.orm,
  javax.sql
 Import-Bundle: com.springsource.com.mysql.jdbc;version="[5.1.6,5.1.6]",
- com.springsource.org.apache.commons.dbcp;version="[1.2.2.osgi,1.2.2.osgi]"
+ com.springsource.org.apache.commons.dbcp;version="[1.2.2.osgi,1.2.2.osgi]",
+ com.sitechasia.webx.osgi.orm.hbmloader;version="[1.0.0,1.0.0]"
 Import-Library: org.springframework.spring;version="[2.5.6.A,2.5.6.A]"
 

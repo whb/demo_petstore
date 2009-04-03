@@ -20,7 +20,8 @@
 
 	<servlet>
 		<servlet-name>action</servlet-name>
-		<servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+		<servlet-class>
+			com.sitechasia.webx.core.web.struts1.servlet.MultiStrutsConfigActionServlet</servlet-class>
 		<load-on-startup>true</load-on-startup>
 		<init-param>
 			<param-name>config</param-name>

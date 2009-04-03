@@ -13,7 +13,7 @@
 		<property name="password" value="admin" />
 	</bean>
 	<bean id="sessionFactory"
-		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		class="com.sitechasia.webx.osgi.orm.LocalSessionFactoryBean">
 		<property name="hibernateProperties">
 			<props>
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect
@@ -26,7 +26,6 @@
 			</props>
 		</property>
 		<property name="dataSource" ref="dataSource" />
-		<property name="mappingResources" value="cn/ceopen/sample/petstore/model/Category.hbm.xml" />
 	</bean>
 	<bean id="transactionManager"
 		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
